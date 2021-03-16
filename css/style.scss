@@ -27,11 +27,11 @@ body {
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  background: no-repeat url('../images/pattern-curve.svg') bottom left, no-repeat url('../images/image-tanya.jpg') 900px 50%, no-repeat url('../images/pattern-bg.svg') 900px 50%;
   color: $main-font-color;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: no-repeat url('../images/pattern-curve.svg') bottom left
 }
 
 // Main styles //
@@ -39,22 +39,29 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  width: 1000px;
+  align-items: center;
+  width: 1400px;
+  height: 100vh;
+  background: no-repeat url('../images/image-tanya.jpg') 750px center, no-repeat url('../images/pattern-bg.svg') 650px center;
 }
 
 .quote {
-  padding: 4em;
-  background: no-repeat url('../images/pattern-quotes.svg') 25% 0%;
-  line-height: 2.5em;
+  position: relative;
+  right: 250px;
+  width: 800px;
+  padding: 4em 0em;
+  background: no-repeat url('../images/pattern-quotes.svg') 15rem 0%;
+  line-height: 3em;
 
   &__body {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   &__attribute {
     font-weight: 500;
     color: $light-font-color;
     margin-top: 2rem;
+    font-size: 1.5rem;
   }
 
   &--bold {
@@ -77,6 +84,7 @@ body {
 
 
 .attribution {
+  display: none;
   align-self: flex-end;
 }
 

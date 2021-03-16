@@ -22,17 +22,17 @@ body {
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  background: no-repeat url("../images/pattern-curve.svg") bottom left, no-repeat url("../images/image-tanya.jpg") 900px 50%, no-repeat url("../images/pattern-bg.svg") 900px 50%;
   color: #202046;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: no-repeat url("../images/pattern-curve.svg") bottom left;
 }
 
 .main {
@@ -42,23 +42,32 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1000px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1400px;
+  height: 100vh;
+  background: no-repeat url("../images/image-tanya.jpg") 750px center, no-repeat url("../images/pattern-bg.svg") 650px center;
 }
 
 .quote {
-  padding: 4em;
-  background: no-repeat url("../images/pattern-quotes.svg") 25% 0%;
-  line-height: 2.5em;
+  position: relative;
+  right: 250px;
+  width: 800px;
+  padding: 4em 0em;
+  background: no-repeat url("../images/pattern-quotes.svg") 15rem 0%;
+  line-height: 3em;
 }
 
 .quote__body {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .quote__attribute {
   font-weight: 500;
   color: #babacf;
   margin-top: 2rem;
+  font-size: 1.5rem;
 }
 
 .quote--bold {
@@ -72,6 +81,7 @@ body {
 }
 
 .attribution {
+  display: none;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }

@@ -31,26 +31,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: no-repeat url('../images/pattern-curve.svg') bottom left
+  background: no-repeat url('../images/pattern-curve.svg') bottom left;
 }
 
 // Main styles //
 
 .main {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1400px;
+  width: 1440px;
   height: 100vh;
-  background: no-repeat url('../images/image-tanya.jpg') 750px center, no-repeat url('../images/pattern-bg.svg') 650px center;
+  background: no-repeat url('../images/pattern-bg.svg') 625px center / 50rem;
+  z-index: -2;
 }
 
 .quote {
   position: relative;
-  right: 250px;
+  right: 280px;
   width: 800px;
   padding: 4em 0em;
-  background: no-repeat url('../images/pattern-quotes.svg') 15rem 0%;
+  background: no-repeat url('../images/pattern-quotes.svg') 6rem 0%;
   line-height: 3em;
 
   &__body {
@@ -76,8 +78,24 @@ body {
 
 }
 
-.slider {
-  &__photo {
+.photo {
+  position: absolute;
+  right: 4rem;
+  z-index: -1;
+  height: 600px;
+  width: 600px;
+  border-radius: 1rem;
+  background: right / cover no-repeat url('../images/image-tanya.jpg');
+  -webkit-box-shadow: 3px 10px 30px -11px rgba(0,0,0,0.86); 
+  box-shadow: 3px 10px 30px -11px rgba(0,0,0,0.86);
+  
+
+  &__prev{
+
+  }
+
+  &__next{
+    
   }
 }
 

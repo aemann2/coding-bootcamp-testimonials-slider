@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+// Variables
+
+$main-font-color: rgb(32, 32, 70);
+$light-font-color: hsl(240, 18%, 77%);
+
+// Globals
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 300;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  background: no-repeat url('../images/pattern-curve.svg') bottom left, no-repeat url('../images/image-tanya.jpg') 900px 50%, no-repeat url('../images/pattern-bg.svg') 900px 50%;
+  color: $main-font-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Main styles //
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+}
+
+.quote {
+  padding: 4em;
+  background: no-repeat url('../images/pattern-quotes.svg') 25% 0%;
+  line-height: 2.5em;
+
+  &__body {
+    font-size: 2rem;
+  }
+
+  &__attribute {
+    font-weight: 500;
+    color: $light-font-color;
+    margin-top: 2rem;
+  }
+
+  &--bold {
+    font-weight: 700;
+    color: $main-font-color;
+    margin-right: .5em;
+  }
+
+  &--alt {
+    display: none;
+  }
+
+}
+
+.slider {
+  &__photo {
+  }
+}
+
+
+
+.attribution {
+  align-self: flex-end;
+}
+
+// Media queries //
+

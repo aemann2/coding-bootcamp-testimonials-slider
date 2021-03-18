@@ -33,6 +33,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: no-repeat url("../images/pattern-curve.svg") bottom left;
+  overflow: hidden;
 }
 
 .main {
@@ -48,13 +49,13 @@ body {
           align-items: center;
   width: 1440px;
   height: 100vh;
-  background: no-repeat url("../images/pattern-bg.svg") 625px center/50rem;
+  background: no-repeat url("../images/pattern-bg.svg") 100% center/50rem;
 }
 
 .quote {
   position: relative;
-  right: 280px;
-  width: 800px;
+  right: 17.5rem;
+  width: 50rem;
   padding: 4em 0em;
   background: no-repeat url("../images/pattern-quotes.svg") 6rem 0%;
   line-height: 3em;
@@ -103,8 +104,8 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  -webkit-box-shadow: 3px 10px 30px -11px rgba(0, 0, 0, 0.86);
-  box-shadow: 3px 10px 30px -11px rgba(0, 0, 0, 0.86);
+  -webkit-box-shadow: 3px 7px 30px -11px black;
+  box-shadow: 3px 7px 30px -11px black;
 }
 
 .photo__prev:hover, .photo__next:hover {

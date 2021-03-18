@@ -44,7 +44,6 @@ body {
   width: 1440px;
   height: 100vh;
   background: no-repeat url('../images/pattern-bg.svg') 625px center / 50rem;
-  z-index: -2;
 }
 
 .quote {
@@ -54,6 +53,7 @@ body {
   padding: 4em 0em;
   background: no-repeat url('../images/pattern-quotes.svg') 6rem 0%;
   line-height: 3em;
+  z-index: 3;
 
   &__body {
     font-size: 2.5rem;
@@ -69,37 +69,54 @@ body {
   &--bold {
     font-weight: 700;
     color: $main-font-color;
-    margin-right: .5em;
+    margin-right: 0.5em;
   }
 
   &--alt {
     display: none;
   }
-
 }
 
 .photo {
   position: absolute;
   right: 4rem;
-  z-index: -1;
+  z-index: 2;
   height: 600px;
   width: 600px;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: right / cover no-repeat url('../images/image-tanya.jpg');
-  -webkit-box-shadow: 3px 10px 30px -11px rgba(0,0,0,0.86); 
-  box-shadow: 3px 10px 30px -11px rgba(0,0,0,0.86);
-  
+  -webkit-box-shadow: 3px 10px 30px -11px rgba(0, 0, 0, 0.86);
+  box-shadow: 3px 10px 30px -11px rgba(0, 0, 0, 0.86);
 
-  &__prev{
+  &__prev,
+  &__next {
+    position: absolute;
+    bottom: -1rem;
+    border: none;
+    padding: 25px 25px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-box-shadow: -1px 7px 30px -11px rgb(0 0 0 / 86%);
+    box-shadow: -1px 7px 30px -11px rgb(0 0 0 / 86%);
 
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 
-  &__next{
-    
+  &__prev {
+    right: 30rem;
+    border-radius: 30px 0px 0px 30px;
+    background: no-repeat 50% 50% url('../images/icon-prev.svg') white;
+  }
+
+  &__next {
+    right: 27rem;
+    border-radius: 0px 30px 30px 0px;
+    background: no-repeat 50% 50% url('../images/icon-next.svg') white;
   }
 }
-
-
 
 .attribution {
   display: none;
@@ -107,4 +124,3 @@ body {
 }
 
 // Media queries //
-

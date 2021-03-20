@@ -128,3 +128,30 @@ blockquote {
 }
 
 // Media queries //
+
+@media only screen and (max-width: 1400px) {
+  .main {
+    flex-direction: column;
+    background: no-repeat url('../images/pattern-bg.svg') 16rem 4rem / 45rem;
+  }
+
+  .quote {
+    position: static;
+    order: 2;
+    text-align: center;
+
+    &__attribute {
+      font-size: 1.8rem;
+    }
+
+    &--bold {
+      display: block;
+    }
+  }
+
+  .photo {
+    height: 550px;
+    width: 550px;
+    position: relative;
+  }
+}

@@ -134,4 +134,32 @@ blockquote {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+
+@media only screen and (max-width: 1400px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: no-repeat url("../images/pattern-bg.svg") 16rem 4rem/45rem;
+  }
+  .quote {
+    position: static;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .quote__attribute {
+    font-size: 1.8rem;
+  }
+  .quote--bold {
+    display: block;
+  }
+  .photo {
+    height: 550px;
+    width: 550px;
+    position: relative;
+  }
+}
 /*# sourceMappingURL=style.css.map */

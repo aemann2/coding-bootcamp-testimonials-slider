@@ -35,6 +35,10 @@ body {
   overflow: hidden;
 }
 
+blockquote {
+  display: none;
+}
+
 // Main styles //
 
 .main {
@@ -71,10 +75,6 @@ body {
     font-weight: 700;
     color: $main-font-color;
     margin-right: 0.5em;
-  }
-
-  &--alt {
-    display: none;
   }
 }
 

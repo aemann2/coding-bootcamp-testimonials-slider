@@ -36,6 +36,10 @@ body {
   overflow: hidden;
 }
 
+blockquote {
+  display: none;
+}
+
 .main {
   position: relative;
   display: -webkit-box;
@@ -77,10 +81,6 @@ body {
   font-weight: 700;
   color: #202046;
   margin-right: 0.5em;
-}
-
-.quote--alt {
-  display: none;
 }
 
 .photo {

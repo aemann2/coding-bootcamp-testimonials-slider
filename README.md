@@ -1,6 +1,4 @@
-# [Frontend Mentor - Coding bootcamp testimonials slider
-
-](https://testimonial-slider.netlify.app/)
+# [Frontend Mentor - Coding bootcamp testimonials slider](https://testimonial-slider.netlify.app/)
 
 ## Background
 

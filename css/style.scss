@@ -47,7 +47,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   width: 1440px;
-  height: 100vh;
+  height: 800px;
   background: no-repeat url('../images/pattern-bg.svg') 100% center / 50rem;
 }
 
@@ -130,15 +130,23 @@ blockquote {
 // Media queries //
 
 @media only screen and (max-width: 1400px) {
+  body {
+    overflow: scroll;
+  }
+
   .main {
     flex-direction: column;
-    background: no-repeat url('../images/pattern-bg.svg') 16rem 4rem / 45rem;
+    background: no-repeat url('../images/pattern-bg.svg') 50% 15% / 43rem;
+    height: 1400px;
   }
 
   .quote {
     position: static;
     order: 2;
     text-align: center;
+    padding: 2rem 0em;
+    margin-top: 5rem;
+    background: no-repeat url('../images/pattern-quotes.svg') center top / 8rem;
 
     &__attribute {
       font-size: 1.8rem;
@@ -153,5 +161,85 @@ blockquote {
     height: 550px;
     width: 550px;
     position: relative;
+    right: 0rem;
+
+    &__prev {
+      left: 45%;
+    }
+    &__next {
+      right: 37%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) and (max-height: 1150px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .main {
+    margin-top: 2rem;
+    padding: 2rem;
+    height: 900px;
+    background: no-repeat url('../images/pattern-bg.svg') center top / 30rem;
+  }
+
+  .quote {
+    &__body {
+      font-size: 1.8rem;
+    }
+    &__attribute {
+      font-size: 1.5rem;
+    }
+  }
+
+  .photo {
+    height: 400px;
+    width: 400px;
+    position: relative;
+
+    &__prev {
+      left: 40%;
+    }
+    &__next {
+      right: 37%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main,
+  .quote {
+    width: 320px;
+  }
+
+  .main {
+    background: no-repeat url('../images/pattern-bg.svg') 50% top / 20rem;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    padding: 0rem;
+    height: 1000px;
+  }
+
+  .quote {
+    background: no-repeat url('../images/pattern-quotes.svg') center top / 5rem;
+    &__body {
+      font-size: 1.7rem;
+    }
+    &__attribute {
+      font-size: 1.3rem;
+    }
+  }
+
+  .photo {
+    height: 280px;
+    width: 280px;
+
+    &__prev {
+      left: 32%;
+    }
+    &__next {
+      right: 35%;
+    }
   }
 }

@@ -90,7 +90,7 @@ blockquote {
   background-repeat: no-repeat;
   -webkit-box-shadow: 3px 10px 30px -11px rgba(0, 0, 0, 0.86);
   box-shadow: 3px 10px 30px -11px rgba(0, 0, 0, 0.86);
-  transition: all 0.3s;
+  transition: background-image 0.3s;
 
   &__prev,
   &__next {
@@ -100,7 +100,6 @@ blockquote {
     padding: 25px 25px;
     display: inline-block;
     cursor: pointer;
-    transition: all 0.2s;
     -webkit-box-shadow: 3px 7px 30px -11px black;
     box-shadow: 3px 7px 30px -11px black;
 
